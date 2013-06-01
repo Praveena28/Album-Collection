@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eminosoft.album"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="6" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+         >
+        <activity
+            android:name=".SplasSceen"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Category" />
+        <activity android:name=".CategoryPicker" />
+        <activity android:name=".Editname" />
+        <activity android:name=".PhotoCaptureExample" />
+        <activity android:name=".PickerList" />
+        <activity android:name=".Listedit" />
+        <activity android:name=".CateSort" />
+        <activity android:name=".Sorting" />
+        <activity android:name=".SortedSelectCate" />
+        <activity android:name=".MyGrid" />
+        <activity android:name=".Sharing" />
+        <activity android:name=".DBRoulette" />
+        <activity android:name=".SortedList" />
+        <activity android:name=".PdfList" />
+        <activity android:name=".PdfViwer" />
+        <activity android:name=".GridviewActivity" />
+        <activity android:name=".SdGridView" />
+        <activity android:name=".MyCursorFolder" />
+        <activity android:name=".FullImage" />
+        <activity android:name=".CarasoleImages" />
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-lh5f24spg3pq9wx" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

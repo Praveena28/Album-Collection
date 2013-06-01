@@ -1,0 +1,16 @@
+User visible changes for the Android UI APIs under the terms of the Apache License 2.0. 
+------------------------------------------------------------------------------------------
+
+Notes in [CarouselBehavior Class] 
+ * Location: src/com/digitalaria/gama/carousel
+ * The class is derived from ["Gallery"] Class (API Level 10).
+ * Added pre-build layouts and customizable layout feature.
+ * Added modifiable scroll angle and direction.
+ * Added a bounce effect feature when scroll over the its bound.
+ * Added an infinite scroll mode.
+ * Added the item rearranging feature.
+
+Notes in [DAScroller Class] 
+ * Location: src/com/digitalaria/gama/carousel
+ * The class is derived from ["Scroller"] Class (API Level 9).
+ * Updated type of parameters in ["fling"] method from integer to float for smooth motion effect.
